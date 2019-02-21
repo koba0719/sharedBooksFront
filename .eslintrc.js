@@ -15,5 +15,10 @@ module.exports = {
     'prettier'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "linebreak-style": 0,
+    "multiline": "never",
+    "vue/singleline-html-element-content-newline": false,
+    "vue/html-closing-bracket-spacing": false
+  }
 }

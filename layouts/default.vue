@@ -1,8 +1,17 @@
 <template>
   <div>
+    <appNavigation />
     <nuxt />
   </div>
 </template>
+<script>
+import appNavigation from '~/components/AppNavigation.vue'
+export default {
+  components: {
+    appNavigation
+  }
+}
+</script>
 
 <style>
 html {

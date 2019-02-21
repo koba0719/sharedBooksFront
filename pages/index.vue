@@ -1,68 +1,40 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        sharedBooksFront
-      </h1>
-      <h2 class="subtitle">
-        My cool Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
+    <carousel/>
+    <b-row>
+      <b-col xl="8" sm="12" offset-xl="2" class="header-section-headline">
+        <h2 class="text-center">SharedBooksとは？？</h2>
+      </b-col>
+      <b-col xl="8" sm="12" offset-xl="2">
+        <p class="text-center header-section-bodyline">
+          SharedBooksは、本の感想や評価をチェックしたり、webやアプリで本棚をかんたんに作成し、感想やレビューを書いたり、読書の管理・記録をすることができるアプリです<br>
+          Booklogのパクリです
+        </p>
+      </b-col>
+    </b-row>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import carousel from '~/components/Carousel.vue'
 
 export default {
   components: {
-    Logo
+    carousel
   }
 }
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+h2 {
+  font-weight: bold;
+}
+.header-section-headline {
+  margin-top: 2%;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.header-section-bodyline {
+  margin-top: 1%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 </style>
